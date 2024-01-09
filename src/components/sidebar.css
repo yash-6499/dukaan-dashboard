@@ -1,0 +1,16 @@
+.nav-list > li{
+    display: flex;
+    /* margin-bottom: 15px; */
+    padding: 10px;
+    
+}
+
+.nav-list > li:hover{
+    background-color: #353C53;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-list > li > svg{
+    margin-right: 10px;
+}
