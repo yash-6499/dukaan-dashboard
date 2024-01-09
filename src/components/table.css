@@ -1,0 +1,11 @@
+.pagination > li{
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.pagination > li:hover{
+    background-color: #146EB4;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}

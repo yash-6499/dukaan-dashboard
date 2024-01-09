@@ -1,4 +1,5 @@
 import React from 'react'
+import './table.css'
 
 const tableData = [
     {orderId:281209,orderDate:"7 July 2024",amount:"6969.00", transactionFees:"22"},
@@ -110,7 +111,7 @@ const TableCardItem=({orderId,orderDate,amount, transactionFees})=>
 
 function Table() {
   return (
-    <section className='mt-[20px] ml-[30px] shadow-[0px_0px_6px_-3px_rgba(0,0,0,0.75)] mr-[30px] p-[15px]'>
+    <section className='mt-[20px] ml-[30px] shadow-[0px_0px_6px_-3px_rgba(0,0,0,0.75)] mr-[30px] mb-[20px] p-[15px]'>
       <div className='mb-[20px]'>
           
         <Filters />
@@ -126,6 +127,30 @@ function Table() {
                 <TableCardItem key={orderId} orderId={orderId} orderDate={orderDate} amount={amount} transactionFees={transactionFees}/>
             ))}
             </table>
+
+            <div className='flex justify-center mt-[20px]'>
+              <ul className='flex pagination items-center'>
+                <li className=' previousBtn border border-solid border-[lightgray] rounded-[5px]'>
+                  <img className='inline mb-[2px] ml-[4px]' src="/images/chevron_left_FILL0_wght400_GRAD0_opsz24.png"/>
+                  <span className='pt-[10px] pb-[10px] pr-[8px]'>Previous</span>
+                </li>
+                <li>1</li>
+                <li>...</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li className='border border-solid border-[lightgray] pt-[3px] pr-[15px] pl-[15px] pb-[3px] rounded-[5px]'>
+                  <span className='pt-[10px] pb-[10px] pl-[8px]'>Next</span>
+                  <img className='inline mb-[2px] ml-[4px]' src="/images/chevron_right_FILL0_wght400_GRAD0_opsz24.png" alt="" />
+                </li>
+              </ul>
+            </div>
 
     </section>
     
