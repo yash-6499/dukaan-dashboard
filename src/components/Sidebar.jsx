@@ -3,7 +3,7 @@ import './sidebar.css'
 
 function Sidebar() {
   return (
-    <div className='bg-[#1E2640] text-[white] p-[13px]'>
+    <div className='bg-[#1E2640] text-[white] p-[13px] flex flex-col justify-between'>
 
       {/* PROFILE */}
       <div className='flex justify-between'>
@@ -19,7 +19,7 @@ function Sidebar() {
       </div>
 
       {/* NAVIGATION */}
-      <div className='mt-[30px]'>
+      <div className='mt-[-80px]'>
         <ul className='nav-list'>
           <li>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
